@@ -1,0 +1,15 @@
+<!Doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+  </head>
+  <body>
+    {%block content%}
+    <a href="{%url 'graphform' %}">graph</a>
+    <a href="{%url 'pieform' %}">pie</a>
+    <a href="{%url 'matrixform' %}">matrix</a>
+    {%endblock content%}
+  </body>
+</html>

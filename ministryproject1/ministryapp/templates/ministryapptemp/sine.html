@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animations</title>
+</head>
+<body>
+    <h1>Sine Wave Animation</h1>
+    {% if sine_animation %}
+    <img src="data:image/gif;base64,{{ sine_animation }}" alt="Sine Wave Animation">
+    {% else %}
+    <p>No animation data available for sine wave.</p>
+    {% endif %}
+
+    <h1>Cosine Wave Animation</h1>
+    {% if cosine_animation %}
+    <img src="data:image/gif;base64,{{ cosine_animation }}" alt="Cosine Wave Animation">
+    {% else %}
+    <p>No animation data available for cosine wave.</p>
+    {% endif %}
+
+    <h1>Tangent Wave Animation</h1>
+    {% if tangent_animation %}
+    <img src="data:image/gif;base64,{{ tangent_animation }}" alt="Tangent Wave Animation">
+    {% else %}
+    <p>No animation data available for tangent wave.</p>
+    {% endif %}
+
+    <h1>Secant Wave Animation</h1>
+    {% if secant_animation %}
+    <img src="data:image/gif;base64,{{ secant_animation }}" alt="Secant Wave Animation">
+    {% else %}
+    <p>No animation data available for secant wave.</p>
+    {% endif %}
+</body>
+</html>

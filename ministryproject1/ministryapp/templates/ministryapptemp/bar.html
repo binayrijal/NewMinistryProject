@@ -1,0 +1,8 @@
+{% extends 'ministryapptemp/base.html' %}
+{%block content%}
+    {%if chart %}
+    <img src="data:image/png;base64, {{chart|safe}}" alt='image'>
+    <img src="data:image/png;base64, {{plot_image|safe}}" alt='image'>
+    
+    {%endif%}
+{%endblock content%}

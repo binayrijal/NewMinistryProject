@@ -1,0 +1,20 @@
+.env
+.env.local
+# Python virtual environment
+venv/
+env/
+
+# Django development settings
+*.pyc
+*.pyo
+*.pyd
+*.db.sqlite3
+*/migrations/
+
+# Static and media files
+/static/
+/media/
+
+# Logs and backups
+*.log
+*.bak

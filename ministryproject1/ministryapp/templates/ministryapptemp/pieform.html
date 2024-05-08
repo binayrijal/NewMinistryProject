@@ -1,0 +1,11 @@
+{% extends 'ministryapptemp/base.html' %}
+{%block content%}
+    <form action="{% url 'pieview' %}" method="post">
+     {%csrf_token%}
+     <input type="text" name='x' placeholder="enter x separated by comma" >
+     <input type="text" name='y' placeholder="enter y value separated by comma">
+     <button type="submit">Draw</button>
+    </form>
+{%endblock content%}
+    
+ 

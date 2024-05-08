@@ -1,0 +1,13 @@
+{% extends 'ministryapptemp/base.html' %}
+{%block content%}
+
+    <h1>This is form for graph</h1>
+    <form action="{% url 'graphview' %}" method="post">
+     {% csrf_token %}
+     <input type="text" name='x' placeholder="enter x separated by comma" length="500px" ></br></br>
+     <input type="text" name='y' placeholder="enter y value separated by comma" length="500px"></br></br>
+     <button type="submit">Draw</button>
+    </form>
+
+{%endblock content%}
+  

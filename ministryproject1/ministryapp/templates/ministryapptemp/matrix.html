@@ -1,0 +1,14 @@
+{% extends 'ministryapptemp/base.html' %}
+{%block content%}
+
+    <h1>This is form for matrix</h1>
+    <h1>Animated 3D Visualization</h1>
+    <img src="data:image/png;base64,{{ animation_data }}" alt="Animated 3D Visualization">
+
+    {% if animation_data %}
+    <img src="data:image/gif;base64,{{ animation_data }}" alt="Animation">
+    {% else %}
+    <p>No animation data available.</p>
+    {% endif %}
+
+{%endblock content%}
