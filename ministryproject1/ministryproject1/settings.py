@@ -82,8 +82,9 @@ WSGI_APPLICATION = 'ministryproject1.wsgi.application'
 CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:8080",
-    "http://localhost:8081",
-    "https://edutainnepal.vercel.app"
+    "http://127.0.0.1:8081",
+    'https://edutainnepal.vercel.app',
+    'http://127.0.0.1:8000',
 
 ]
 
