@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d78-0w_$he=#!#0#er+x88pb%6oh=b-es7&i18+(tyr8h(%0+0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['edutainNP.pythonanywhere.com']
 
 
 # Application definition
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'rest_framework', 
+    'rest_framework',
     'rest_framework_simplejwt',
     'ministryapp',
 ]
@@ -80,7 +80,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ministryproject1.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    
+
     "http://localhost:8080",
     "http://127.0.0.1:8081",
     "http://edutainnepal.vercel.app"
@@ -101,7 +101,7 @@ DATABASES = {
 REST_FRAMEWORK = {
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
-    
+
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 

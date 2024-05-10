@@ -5,7 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import re_path
 from django.conf import settings
-from django.views.static import serve 
+from django.views.static import serve
 
 urlpatterns = [
     path('home/',views.Home,name='home'),
@@ -31,6 +31,6 @@ urlpatterns = [
     path('courses/<int:classnumber>/', views.course_detail, name='course-detail'),
     path('videos/<int:classnumber>/', views.course_detail, name='course-detail'),
     path('save-time/', views.save_time, name='save_time'),
-    
-    
+
+
 ]
