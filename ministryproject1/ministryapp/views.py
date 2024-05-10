@@ -429,4 +429,3 @@ def save_time(request):
 #         serializer = CourseSerializer(courses, many=True)
     
 #     return Response(serializer.data)
-
