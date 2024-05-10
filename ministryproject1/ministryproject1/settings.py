@@ -83,7 +83,8 @@ CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:8080",
     "http://127.0.0.1:8081",
-    "edutainnepal.vercel.app/"
+    'https://edutainnepal.vercel.app',
+    'http://127.0.0.1:8000',
 
 ]
 
